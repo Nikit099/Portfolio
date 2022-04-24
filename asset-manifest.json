@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.342e9771.css",
+    "main.js": "/Portfolio/static/js/main.ca7b716b.js",
+    "static/media/slider.gif": "/Portfolio/static/media/slider.06beae6ddd84729baf1a.gif",
+    "static/media/album.gif": "/Portfolio/static/media/album.0a4b413472dd29494049.gif",
+    "static/media/Group 1.png": "/Portfolio/static/media/Group 1.07a573a36fdbbcd62773.png",
+    "static/media/fish.png": "/Portfolio/static/media/fish.125552c175d7fac2f13a.png",
+    "static/media/glassCards.gif": "/Portfolio/static/media/glassCards.f46a9073560b8052ea40.gif",
+    "static/media/3Dsquaer.gif": "/Portfolio/static/media/3Dsquaer.1e8f592c4a68e1fec4bf.gif",
+    "static/media/todo.png": "/Portfolio/static/media/todo.7a2ee0a57e1611c2d5b6.png",
+    "static/media/pomo.png": "/Portfolio/static/media/pomo.f029c3fed41e3a45ee94.png",
+    "static/media/rock.png": "/Portfolio/static/media/rock.874e1343ce518e32b353.png",
+    "static/media/back.png": "/Portfolio/static/media/back.c76e4b6fb6e4f2b412bb.png",
+    "static/media/text.png": "/Portfolio/static/media/text.c71f4e972fb95aee07ff.png",
+    "static/media/fast.png": "/Portfolio/static/media/fast.41f86d12dc0a39bcd342.png",
+    "static/media/password.png": "/Portfolio/static/media/password.6f30092aa5ebac9ab1dc.png",
+    "static/media/donat.png": "/Portfolio/static/media/donat.2ca036eb42affda0a248.png",
+    "static/media/telegram.png": "/Portfolio/static/media/telegram.1b722a57c2ce8ff2980a.png",
+    "static/media/github.png": "/Portfolio/static/media/github.44eee0c4a6c25b0d7347.png",
+    "index.html": "/Portfolio/index.html",
+    "main.342e9771.css.map": "/Portfolio/static/css/main.342e9771.css.map",
+    "main.ca7b716b.js.map": "/Portfolio/static/js/main.ca7b716b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.342e9771.css",
+    "static/js/main.ca7b716b.js"
+  ]
+}
