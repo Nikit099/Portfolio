@@ -1,12 +1,23 @@
 import React from 'react';
 
 const Head = () => {
+    const smoothScroll = (e) => {
+        e.preventDefault()
+        const anchor = e.target.closest('.anc')
+        if(anchor){
+            const blockID = anchor.getAttribute('href')
+            document.querySelector('' + blockID).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            })
+        }
+    }
     return (
-        <div className='head'>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Progects</a>
-            <a href="">Contact</a>
+        <div onClick={smoothScroll} className='head'>
+            <a className='anc' href="#top">Home</a>
+            <a className='anc' href="#about">About</a>
+            <a className='anc' href="#projects">Progects</a>
+            <a className='anc' href="#contacts">Contact</a>
         </div>
     );
 };

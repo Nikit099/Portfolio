@@ -19,7 +19,7 @@ const Board = () => {
         if(cell){
             const color = random()
             cell.style.backgroundColor = color
-            cell.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+            cell.style.boxShadow = `0 0 10px ${color}, 0 0 50px ${color}`
         }
         
     }
@@ -32,8 +32,8 @@ const Board = () => {
     const random = () => colors[Math.floor(Math.random() * colors.length)]
     const randomSquaers = () => count[Math.floor(Math.random() * count.length)]
     return (
-        <div className='canvas'>
-            <div className="container" onMouseUp={setColor} onMouseOver={setColor} id="board">
+        <div className='canvas' id='top'>
+            <div className="container" onMouseUp={setColor} onMouseOver={setColor} id="board" >
             {squares.map(i => (
                 <div id={i}  className='square'onMouseLeave={remuveColor} key={i}>
 

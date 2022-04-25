@@ -6,8 +6,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+    height: 4100px;
+}
+
 .canvas {
-    position: absolute;
     background-color: #111;
     display: flex;
     align-items: center;
@@ -65,9 +68,12 @@ body {
 
 .lookWork {
     margin-left: 304px;
-    width: 200px;
-    height: 60px;
+    display: block;
+    width: 180px;
+    height: 25px;
     font-size: 20px;
+    text-decoration: none;
+    padding: 12px 0px 20px 15px;
     border: 1px solid rgb(208, 208, 208);
     background-color: rgba(102, 51, 153, 0);
     color: rgb(208, 208, 208);
@@ -92,8 +98,13 @@ body {
 }
 
 .about {
-    position: relative;
-    top: 980px;
+    color: #414141;
+}
+
+.txtAbout {
+    width: 160px;
+    padding: 100px 0 0 0;
+    margin: auto;
 }
 
 .webFun {
@@ -190,14 +201,9 @@ body {
     transition: 0.5s;
 }
 
-.about {
-    color: #414141;
-}
-
 .informMe {
     position: relative;
-    left: 300px;
-    top: 150px;
+    top: 100px;
 }
 
 .informMe h3 {
@@ -220,16 +226,11 @@ body {
     width: 600px;
 }
 
-.txtAbout {
-    width: 160px;
-    margin: auto;
-}
-
 .columns {
     display: flex;
     position: relative;
     left: 1100px;
-    top: -500px;
+    /* top: -500px; */
 }
 
 .percent {
@@ -243,7 +244,7 @@ body {
     display: flex;
     position: relative;
     left: 1110px;
-    top: -500px;
+    /* top: -500px; */
 }
 
 .tool {
@@ -286,11 +287,16 @@ body {
     bottom: -50px;
 }
 
+.precentages {
+    position: relative;
+    top: -560px;
+}
+
 .counts {
     display: flex;
     position: relative;
     left: 1100px;
-    top: -1000px;
+    top: -500px;
 }
 
 .count {
@@ -343,7 +349,7 @@ body {
     position: relative;
     background: rgb(201, 201, 201);
     background: linear-gradient(0deg, rgba(201, 201, 201, 1) 0%, rgba(233, 233, 233, 1) 100%);
-    top: 750px;
+    top: -220px;
     height: 350px;
 }
 
@@ -367,7 +373,7 @@ body {
 
 .projects {
     position: relative;
-    top: 760px;
+    top: -220px;
     background-color: #e9e9e9;
     height: 1300px;
 }
@@ -615,4 +621,57 @@ body {
     background-color: #00000000;
     border: 1px solid rgb(255, 71, 108);
     color: rgb(0, 0, 0);
+}
+
+.head {
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+    background-color: #222222;
+    padding: 15px 0 15px 360px;
+    transition: 1s;
+}
+
+.head a {
+    color: rgb(208, 208, 208);
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.head a:hover {
+    color: rgb(255, 72, 108);
+}
+
+.element-animationLeft {
+    opacity: 0;
+    left: 0px;
+}
+
+.element-animationLeft.element-show {
+    opacity: 1;
+    left: 300px;
+    transition: all 1s;
+}
+
+.element-animationRight {
+    left: 300px;
+    opacity: 0;
+}
+
+.element-animationRight.element-showRight {
+    left: 0px;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.element-animationOpasiti {
+    opacity: 0;
+}
+
+.element-animationOpasiti.element-showOpasiti {
+    opacity: 1;
+    transition: ease-in-out 1.5s;
 }

@@ -2,9 +2,9 @@ import React from 'react'
 
 function Progects() {
     return (
-        <div className='projects'>
-            <h2 className='txtProj'>PROJECTS</h2>
-            <div className='sort' >
+        <div className='projects' id='projects'>
+            <h2 className='txtProj element-animationOpasiti'>PROJECTS</h2>
+            <div className='sort element-animationOpasiti' >
                 <h3>All</h3>
                 <h3>JS</h3>
                 <h3>React</h3>
