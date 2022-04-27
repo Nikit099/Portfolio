@@ -18,10 +18,10 @@ function About() {
             <h1 className='txtFun element-animationOpasiti'>Web is fun</h1>
             <h1 className='txtFunExp element-animationOpasiti'>EXPERIMENTS & OPEN SOURCE</h1>
             <div className='webFun element-animationOpasiti' >
-                <div className='fun ' ><img className='webElem1' src={require('../img/album.gif')} alt="albumGif" /></div>
-                <div className='fun ' ><img className='webElem2' src={require('../img/slider.gif')} alt="slider" /></div>
-                <div className='fun ' ><img className='webElem3' src={require('../img/3Dsquaer.gif')} alt="3Dsquaer" /></div>
-                <div className='fun ' ><img className='webElem4' src={require('../img/glassCards.gif')} alt="glassCards" /></div>
+                <div className='fun ' ><a target="_blank" href="https://nikit099.github.io/album/"><img className='webElem1' src={require('../img/album.gif')} alt="albumGif" /></a> </div>
+                <div className='fun ' > <a target="_blank" href="https://nikit099.github.io/slider/"> <img className='webElem2' src={require('../img/slider.gif')} alt="slider" /></a></div>
+                <div className='fun ' > <a target="_blank" href="https://nikit099.github.io/3Dsquares/"><img className='webElem3' src={require('../img/3Dsquaer.gif')} alt="3Dsquaer" /></a></div>
+                <div className='fun ' > <a  target="_blank" href="https://nikit099.github.io/glassCards/"><img className='webElem4' src={require('../img/glassCards.gif')} alt="glassCards" /></a></div>
             </div>
         </div>
     )

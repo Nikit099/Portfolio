@@ -1,5 +1,4 @@
 body {
-    overflow-x: hidden;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -7,7 +6,7 @@ body {
 }
 
 .App {
-    height: 4100px;
+    height: 3600px;
 }
 
 .canvas {
@@ -23,7 +22,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1920px;
+    width: 1903px;
+    min-width: 1903px;
     flex-wrap: wrap;
 }
 
@@ -41,15 +41,14 @@ body {
 }
 
 .home {
-    height: 100vh;
     position: absolute;
-    width: 800px;
     color: rgb(208, 208, 208);
+    width: 800px;
     height: 300px;
-    left: 600px;
+    top: 33%;
+    left: 30%;
     backdrop-filter: blur(2.5px);
     box-shadow: 0px 0px 20px 10px #000000ae;
-    top: 300px;
     border-radius: 15%;
 }
 
@@ -204,6 +203,7 @@ body {
 .informMe {
     position: relative;
     top: 100px;
+    width: 1600px;
 }
 
 .informMe h3 {
@@ -212,9 +212,10 @@ body {
 
 .informMe p {
     width: 500px;
-    margin-left: 60px;
     font-size: 21px;
-    text-align: center
+    text-align: center;
+    margin: 0;
+    padding-left: 60px;
 }
 
 .informMe p a {
@@ -229,8 +230,9 @@ body {
 .columns {
     display: flex;
     position: relative;
-    left: 1100px;
-    /* top: -500px; */
+    width: 800px;
+    left: 60%;
+    width: 600px;
 }
 
 .percent {
@@ -243,12 +245,12 @@ body {
 .tools {
     display: flex;
     position: relative;
-    left: 1110px;
-    /* top: -500px; */
+    left: 60.6%;
+    width: 40px;
 }
 
 .tool {
-    margin: 0 33px;
+    margin: 0 35px;
     color: #785000;
 }
 
@@ -269,7 +271,8 @@ body {
 }
 
 .eight {
-    height: 400px;
+    height: 350px;
+    bottom: -150px;
 }
 
 .five {
@@ -283,37 +286,91 @@ body {
 }
 
 .nine {
-    height: 450px;
-    bottom: -50px;
+    height: 400px;
 }
 
 .precentages {
     position: relative;
     top: -560px;
+    width: 10px;
 }
 
 .counts {
     display: flex;
     position: relative;
-    left: 1100px;
+    left: 60%;
     top: -500px;
+    width: 400px;
 }
 
 .count {
     color: #785000;
-    margin: 0 44.5px;
+    margin: 0 31.2px;
     font-size: 20px;
 }
 
 .linkProj {
     position: relative;
     top: 150px;
+    width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.linkProj a {
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 71, 108);
+    transition: 0.5s;
+    border: rgb(255, 71, 108) 2px solid;
+}
+
+.linkBox {
+    opacity: 0;
+    position: relative;
+    top: -60px;
+    left: 250px;
+    width: 160px;
+    transition: 0.5s;
+}
+
+.linkProj a:hover {
+    top: -100px;
+    background-color: rgb(255, 71, 108);
+    color: whitesmoke;
+    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
+}
+
+.imgBox {
+    margin: 10px 10px;
+}
+
+.box {
+    align-items: center;
+    margin: 10px 0;
+    height: 282px;
+    width: 630px;
+}
+
+.box:hover .linkBox {
+    opacity: 1;
+    top: -100px;
+}
+
+.box:hover a {
+    opacity: 1;
+}
+
+.box a:hover {
+    border: rgb(255, 71, 108) 2px solid;
+    color: whitesmoke;
+    background-color: rgb(255, 71, 108);
+    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
 }
 
 .proj {
     width: 600px;
-    margin: 10px 10px;
-    border: 1px solid black;
 }
 
 .sort {
@@ -331,13 +388,15 @@ body {
 .txtProj {
     position: relative;
     top: 100px;
-    left: 900px;
+    width: 100px;
+    margin: auto;
 }
 
 .links {
     position: relative;
     top: 90px;
-    left: 380px;
+    left: 560px;
+    width: 1000px;
 }
 
 .links img {
@@ -349,21 +408,20 @@ body {
     position: relative;
     background: rgb(201, 201, 201);
     background: linear-gradient(0deg, rgba(201, 201, 201, 1) 0%, rgba(233, 233, 233, 1) 100%);
-    top: -220px;
+    top: -530px;
     height: 350px;
 }
 
 .contacts h1 {
-    position: relative;
-    left: 860px;
-    margin-top: 0px;
-    top: 20px;
+    width: 100px;
+    margin: auto;
 }
 
 .contacts p {
     position: relative;
     bottom: -40%;
     left: 820px;
+    width: 300px;
 }
 
 .contacts p a {
@@ -375,252 +433,7 @@ body {
     position: relative;
     top: -220px;
     background-color: #e9e9e9;
-    height: 1300px;
-}
-
-.pr1:hover~.lkBtn1 {
-    top: -850px;
-    opacity: 1;
-}
-
-.pr2:hover~.lkBtn2 {
-    opacity: 1;
-    top: -890px;
-}
-
-.pr3:hover~.lkBtn3 {
-    top: -890px;
-    opacity: 1;
-}
-
-.pr4:hover~.lkBtn6 {
-    top: -560px;
-    opacity: 1;
-}
-
-.pr5:hover~.lkBtn5 {
-    top: -560px;
-    opacity: 1;
-}
-
-.pr6:hover~.lkBtn4 {
-    top: -560px;
-    opacity: 1;
-}
-
-.pr7:hover~.lkBtn7 {
-    top: -140px;
-    opacity: 1;
-}
-
-.pr8:hover~.lkBtn8 {
-    top: -140px;
-    opacity: 1;
-}
-
-.pr9:hover~.lkBtn9 {
-    top: -140px;
-    opacity: 1;
-}
-
-.lkBtn1:hover {
-    top: -850px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn2:hover {
-    top: -890px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn3:hover {
-    top: -890px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn4:hover {
-    top: -560px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn5:hover {
-    top: -560px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn6:hover {
-    top: -560px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn7:hover {
-    top: -140px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn8:hover {
-    top: -140px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn9:hover {
-    top: -140px;
-    opacity: 1;
-    background-color: rgb(255, 71, 108);
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-    color: white;
-}
-
-.lkBtn1 {
-    position: relative;
-    display: block;
-    width: 82px;
-    top: -800px;
-    left: 230px;
-    padding: 10px 10px;
-    height: 25px;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    color: rgb(0, 0, 0);
-    opacity: 0;
-    transition: 0.4s;
-    text-decoration: none;
-}
-
-.lkBtn2 {
-    position: relative;
-    top: -840px;
-    left: 860px;
-    padding: 10px 10px;
-    height: 40px;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    color: rgb(0, 0, 0);
-    opacity: 0;
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-.lkBtn3 {
-    position: relative;
-    top: -840px;
-    left: 1390px;
-    height: 40px;
-    padding: 10px 10px;
-    transition: 0.4s;
-    text-decoration: none;
-    opacity: 0;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    color: rgb(0, 0, 0);
-}
-
-.lkBtn4 {
-    position: relative;
-    opacity: 0;
-    text-decoration: none;
-    top: -510px;
-    left: 1287px;
-    transition: 0.4s;
-    padding: 10px 10px;
-    height: 40px;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    color: rgb(0, 0, 0);
-}
-
-.lkBtn5 {
-    position: relative;
-    top: -510px;
-    left: 540px;
-    text-decoration: none;
-    transition: 0.4s;
-    padding: 10px 10px;
-    height: 40px;
-    opacity: 0;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    color: rgb(0, 0, 0);
-}
-
-.lkBtn6 {
-    position: relative;
-    transition: 0.4s;
-    text-decoration: none;
-    top: -510px;
-    left: -195px;
-    padding: 10px 10px;
-    height: 40px;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    opacity: 0;
-    color: rgb(0, 0, 0);
-}
-
-.lkBtn7 {
-    position: relative;
-    text-decoration: none;
-    top: -95px;
-    transition: 0.4s;
-    left: -310px;
-    height: 40px;
-    background-color: #00000000;
-    opacity: 0;
-    padding: 10px 10px;
-    border: 1px solid rgb(255, 71, 108);
-    color: rgb(0, 0, 0);
-}
-
-.lkBtn8 {
-    position: relative;
-    top: -95px;
-    transition: 0.4s;
-    text-decoration: none;
-    left: 225px;
-    padding: 10px 10px;
-    height: 40px;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    opacity: 0;
-    color: rgb(0, 0, 0);
-}
-
-.lkBtn9 {
-    position: relative;
-    transition: 0.4s;
-    text-decoration: none;
-    top: -95px;
-    padding: 10px 10px;
-    left: 755px;
-    height: 40px;
-    opacity: 0;
-    background-color: #00000000;
-    border: 1px solid rgb(255, 71, 108);
-    color: rgb(0, 0, 0);
+    height: 1200px;
 }
 
 .head {
@@ -647,7 +460,7 @@ body {
 
 .element-animationLeft {
     opacity: 0;
-    left: 0px;
+    left: 100px;
 }
 
 .element-animationLeft.element-show {
@@ -657,12 +470,12 @@ body {
 }
 
 .element-animationRight {
-    left: 300px;
+    left: 1200px;
     opacity: 0;
 }
 
 .element-animationRight.element-showRight {
-    left: 0px;
+    left: 1100px;
     opacity: 1;
     transition: all 1s;
 }
@@ -674,4 +487,39 @@ body {
 .element-animationOpasiti.element-showOpasiti {
     opacity: 1;
     transition: ease-in-out 1.5s;
+}
+
+.choise {
+    position: absolute;
+    display: flex;
+    top: 900px;
+    left: 1500px;
+    width: 300px;
+}
+
+.around {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.ellow {
+    background: linear-gradient(66deg, rgb(255, 128, 0) 0%, rgb(251, 255, 0) 100%);
+}
+
+.green {
+    background: linear-gradient(241deg, rgba(0, 255, 171) 0%, rgb(77, 255, 0) 100%);
+}
+
+.blue {
+    background: linear-gradient(57deg, rgb(0, 4, 255) 0%, rgb(132, 0, 255) 100%);
+}
+
+.red {
+    background: linear-gradient(34deg, rgba(255, 0, 0, 1) 0%, rgb(253, 45, 218) 100%);
+}
+
+.br {
+    border: 2.7px solid rgb(255, 255, 255);
 }

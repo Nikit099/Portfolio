@@ -5,11 +5,10 @@ function Contacts() {
     return (
         <div className='contacts' id='contacts' >
             <h1 className='element-animationOpasiti'>CONTACTS</h1>
-            <div className='links'>
+            <div className='links element-animationOpasiti'>
                 <a target="_blank" href="https://t.me/Nikitalsa" ><img src={require('../img/linksIMG/telegram.png')} alt="" /></a>
                 <a target="_blank" href="https://vk.com/nikitalsa"><img src={require('../img/linksIMG/vk.png')}  alt="" /></a>
-                <a target="_blank" href="https://github.com/Nikit099?tab=overview&from=2022-04-01&to=2022-04-24"><img src={require('../img/linksIMG/github.png')}  alt="" /></a>
-                <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox"><img src={require('../img/linksIMG/mail.png')}  alt="" /></a>
+                <a target="_blank" href="https://github.com/Nikit099?tab=overview&from=2022-04-01&to=2022-04-24"> <img src={require('../img/linksIMG/github.png')}  alt="" /> </a>
             </div>
             <p> @{new Date().getFullYear()} - <a  target="_blank" href="https://t.me/Nikitalsa">Contact</a> Nikita Nechitailov</p>
         </div>

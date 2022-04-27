@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Head = () => {
     const smoothScroll = (e) => {
@@ -12,12 +12,14 @@ const Head = () => {
             })
         }
     }
+    
     return (
         <div onClick={smoothScroll} className='head'>
             <a className='anc' href="#top">Home</a>
             <a className='anc' href="#about">About</a>
-            <a className='anc' href="#projects">Progects</a>
+            <a className='anc' href="#projects">Projects</a>
             <a className='anc' href="#contacts">Contact</a>
+           
         </div>
     );
 };
