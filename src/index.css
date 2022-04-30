@@ -6,24 +6,17 @@ body {
 }
 
 .App {
-    height: 3600px;
+    height: 3000px;
 }
 
 .canvas {
     background-color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1903px;
-    min-width: 1903px;
     flex-wrap: wrap;
 }
 
@@ -33,7 +26,7 @@ body {
     background: #1d1d1d;
     margin: 2px;
     box-shadow: 0 0 2px #000000;
-    transition: 1.5s ease;
+    transition: 2s ease-out;
 }
 
 .square:hover {
@@ -41,33 +34,29 @@ body {
 }
 
 .home {
-    position: absolute;
+    position: relative;
+    top: -50em;
+    margin: auto;
     color: rgb(208, 208, 208);
-    width: 800px;
+    width: 700px;
     height: 300px;
-    top: 33%;
-    left: 30%;
     backdrop-filter: blur(2.5px);
     box-shadow: 0px 0px 20px 10px #000000ae;
     border-radius: 15%;
 }
 
 .mainText {
-    margin-left: 220px;
-    margin-top: 60px;
+    display: grid;
+    text-align: center
 }
 
-.hi {
-    margin-left: 85px;
-}
-
-.name {
+.mainText span {
     color: rgb(255, 38, 81);
 }
 
 .lookWork {
-    margin-left: 304px;
     display: block;
+    margin: auto;
     width: 180px;
     height: 25px;
     font-size: 20px;
@@ -96,126 +85,66 @@ body {
     transform: rotate(90deg)
 }
 
+@media (max-width: 1200px) {
+    .gridAbout {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.gridAbout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
 .about {
+    position: relative;
     color: #414141;
+    top: -100px;
 }
 
 .txtAbout {
-    width: 160px;
-    padding: 100px 0 0 0;
-    margin: auto;
-}
-
-.webFun {
-    position: relative;
-    top: -200px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .txtFunExp {
-    width: 480px;
     font-style: italic;
     font-size: 15px;
-    position: relative;
-    top: -300px;
-    left: 825px;
+    text-align: center;
     color: rgb(127, 104, 45);
 }
 
-.txtFun {
-    position: relative;
-    top: -200px;
-    width: 200px;
-    margin: auto;
+.webFun {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .fun {
-    box-shadow: inset -8px -10px 30px 3px #e5e5e5;
-    width: 499px;
-    height: 342px;
+    justify-content: center;
+    display: flex;
 }
 
-.fun:hover .webElem1 {
-    margin: 50px 11px 0 11px;
+.fun:hover .webE {
     box-shadow: 0 10px 15px 1px #686767;
 }
 
-.fun:not(:hover) .webElem1 {
-    margin: 60px 11px;
-}
-
-.fun:hover .webElem2 {
-    margin: 50px 11px 0 11px;
-    box-shadow: 0 10px 15px 1px #686767;
-}
-
-.fun:not(:hover) .webElem2 {
-    margin: 60px 11px;
-}
-
-.fun:hover .webElem3 {
-    margin: 50px 11px 0 11px;
-    box-shadow: 0 10px 15px 1px #686767;
-}
-
-.fun:not(:hover) .webElem3 {
-    margin: 60px 11px;
-}
-
-.fun:hover .webElem4 {
-    margin: 50px 11px 0 11px;
-    box-shadow: 0 10px 15px 1px #686767;
-}
-
-.fun:not(:hover) .webElem4 {
-    margin: 60px 11px;
-}
-
-.webElem1 {
-    margin: 60px 11px;
+.webE {
+    margin: 25px 0;
     border-radius: 50em;
-    width: 450px;
+    width: 470px;
     transition: 0.5s;
-}
-
-.webElem2 {
-    margin: 60px 11px;
-    border-radius: 50em;
-    width: 450px;
-    transition: 0.5s;
-}
-
-.webElem3 {
-    margin: 60px 11px;
-    border-radius: 50em;
-    width: 450px;
-    transition: 0.5s;
-}
-
-.webElem4 {
-    margin: 60px 11px;
-    border-radius: 50em;
-    width: 450px;
-    transition: 0.5s;
-}
-
-.informMe {
-    position: relative;
-    top: 100px;
-    width: 1600px;
 }
 
 .informMe h3 {
-    margin-left: 230px;
+    text-align: center;
 }
 
 .informMe p {
+    text-align: center;
     width: 500px;
     font-size: 21px;
-    text-align: center;
-    margin: 0;
-    padding-left: 60px;
 }
 
 .informMe p a {
@@ -224,33 +153,26 @@ body {
 }
 
 .meFoto {
-    width: 600px;
+    width: 550px;
 }
 
 .columns {
     display: flex;
-    position: relative;
-    width: 800px;
-    left: 60%;
-    width: 600px;
 }
 
 .percent {
     width: 40px;
     height: 500px;
     background-color: #d0d0d0;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 .tools {
     display: flex;
-    position: relative;
-    left: 60.6%;
-    width: 40px;
 }
 
 .tool {
-    margin: 0 35px;
+    margin: 0 25px;
     color: #785000;
 }
 
@@ -289,139 +211,95 @@ body {
     height: 400px;
 }
 
-.precentages {
-    position: relative;
-    top: -560px;
-    width: 10px;
-}
-
 .counts {
     display: flex;
     position: relative;
-    left: 60%;
     top: -500px;
-    width: 400px;
 }
 
 .count {
     color: #785000;
-    margin: 0 31.2px;
+    margin: 0 21.2px;
     font-size: 20px;
 }
 
-.linkProj {
-    position: relative;
-    top: 150px;
-    width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.projects {
+    background-color: rgba(233, 233, 233, 1);
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
 }
 
-.linkProj a {
+.projects h1 {
+    text-align: center;
+}
+
+.linkProj {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.box {
+    max-width: 500px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.linkBox {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+}
+
+.linkBox a {
     border-radius: 7px;
     padding: 10px;
     text-decoration: none;
     color: rgb(255, 71, 108);
     transition: 0.5s;
     border: rgb(255, 71, 108) 2px solid;
-}
-
-.linkBox {
     opacity: 0;
-    position: relative;
-    top: -60px;
-    left: 250px;
-    width: 160px;
-    transition: 0.5s;
-}
-
-.linkProj a:hover {
-    top: -100px;
-    background-color: rgb(255, 71, 108);
-    color: whitesmoke;
-    box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
-}
-
-.imgBox {
-    margin: 10px 10px;
-}
-
-.box {
-    align-items: center;
-    margin: 10px 0;
-    height: 282px;
-    width: 630px;
-}
-
-.box:hover .linkBox {
-    opacity: 1;
-    top: -100px;
-}
-
-.box:hover a {
-    opacity: 1;
 }
 
 .box a:hover {
+    opacity: 1;
     border: rgb(255, 71, 108) 2px solid;
     color: whitesmoke;
     background-color: rgb(255, 71, 108);
     box-shadow: 0 0 20px 1px rgba(255, 71, 108, 0.885);
 }
 
-.proj {
-    width: 600px;
-}
-
-.sort {
-    position: relative;
-    top: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-.sort h3 {
-    font-size: 20px;
-    margin: 0 95px;
-}
-
-.txtProj {
-    position: relative;
-    top: 100px;
-    width: 100px;
-    margin: auto;
+.box:hover a {
+    opacity: 1;
 }
 
 .links {
-    position: relative;
-    top: 90px;
-    left: 560px;
-    width: 1000px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
 }
 
 .links img {
-    width: 100px;
-    margin: 0 90px;
+    max-width: 120px;
 }
 
 .contacts {
-    position: relative;
-    background: rgb(201, 201, 201);
     background: linear-gradient(0deg, rgba(201, 201, 201, 1) 0%, rgba(233, 233, 233, 1) 100%);
-    top: -530px;
-    height: 350px;
 }
 
 .contacts h1 {
-    width: 100px;
-    margin: auto;
+    margin: 0;
+    text-align: center;
 }
 
 .contacts p {
-    position: relative;
-    bottom: -40%;
-    left: 820px;
-    width: 300px;
+    text-align: center;
 }
 
 .contacts p a {
@@ -429,26 +307,18 @@ body {
     color: rgb(0, 116, 170);
 }
 
-.projects {
-    position: relative;
-    top: -220px;
-    background-color: #e9e9e9;
-    height: 1200px;
-}
-
 .head {
-    z-index: 2;
+    z-index: 1;
     position: sticky;
     top: 0px;
     background-color: #222222;
-    padding: 15px 0 15px 360px;
-    transition: 1s;
+    padding: 15px 0 15px 10%;
 }
 
 .head a {
     color: rgb(208, 208, 208);
     text-decoration: none;
-    margin: 0 30px;
+    margin: 0 2%;
     font-size: 20px;
     font-weight: 700;
     transition: 0.3s;
@@ -460,22 +330,18 @@ body {
 
 .element-animationLeft {
     opacity: 0;
-    left: 100px;
 }
 
 .element-animationLeft.element-show {
     opacity: 1;
-    left: 300px;
     transition: all 1s;
 }
 
 .element-animationRight {
-    left: 1200px;
     opacity: 0;
 }
 
 .element-animationRight.element-showRight {
-    left: 1100px;
     opacity: 1;
     transition: all 1s;
 }
@@ -490,18 +356,17 @@ body {
 }
 
 .choise {
-    position: absolute;
     display: flex;
-    top: 900px;
-    left: 1500px;
-    width: 300px;
+    justify-content: end;
+    gap: 2em;
+    margin-right: 5%;
 }
 
 .around {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin: 0 20px;
+    cursor: pointer;
 }
 
 .ellow {

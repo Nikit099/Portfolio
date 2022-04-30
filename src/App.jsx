@@ -57,8 +57,8 @@ useEffect(() => {
   return (
     <div className="App">
       <Board/>
-      <Home />
       <Head/>
+      <Home />
       <About/>
      <Progects/>
      <Contacts/>
