@@ -3,7 +3,7 @@ import React from 'react'
 function Percentages() {
    
     return (
-        <div className='precentages element-animationRight'>
+        <div className='precentages test element-animationRight'>
         <div className='columns '>
             <div className='percent html'><div className='fool eight'></div></div>
             <div className='percent css'><div className='fool eight'></div></div>

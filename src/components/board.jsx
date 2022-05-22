@@ -21,8 +21,11 @@ const Board = () => {
     if(window.innerWidth < 1200 && window.innerWidth >= 782){
         count = 1000
     }
-    if(window.innerWidth < 782 ){
+    if(window.innerWidth < 782 &&  window.innerWidth >= 480){
         count = 690
+    }
+    if(window.innerWidth < 480 ){
+        count = 400
     }
 
     for(let i = 0; i < count; i++){
