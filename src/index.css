@@ -8,7 +8,7 @@ body {
 }
 
 .App {
-  height: 3000px;
+  /* height: 3000px; */
 }
 
 .canvas {
@@ -34,13 +34,15 @@ body {
 .square:hover {
   transition-duration: 0s;
 }
-
-.home {
+.homeContainer {
   position: relative;
   top: -50em;
   margin: auto;
-  color: rgb(208, 208, 208);
   max-width: 700px;
+  padding: 30px;
+}
+.home {
+  color: rgb(208, 208, 208);
   height: 300px;
   backdrop-filter: blur(2.5px);
   box-shadow: 0px 0px 20px 10px #000000ae;
@@ -98,6 +100,20 @@ body {
   }
 }
 
+.flexContainer {
+  max-width: 1600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.webContainer {
+  padding: 20px;
+}
+.projContainer {
+  padding: 20px;
+}
+.linksContainer {
+  padding: 20px;
+}
 .webFun {
   margin: 0 auto;
   max-width: 1600px;
@@ -106,14 +122,10 @@ body {
 }
 
 .gridAbout {
-  margin: 0 auto;
-  max-width: 1600px;
   display: flex;
   justify-content: space-around;
 }
-.test {
-  margin: 0 auto;
-}
+
 .about {
   position: relative;
   color: #414141;
@@ -152,12 +164,13 @@ body {
 }
 
 .informMe h3 {
+  max-width: 550px;
   text-align: center;
 }
 
 .informMe p {
   text-align: center;
-  max-width: 500px;
+  max-width: 550px;
   font-size: 21px;
 }
 
@@ -175,16 +188,9 @@ body {
 
 .columns {
   display: flex;
-  max-width: 400px;
 }
-.columnFoto img {
-  width: 100%;
-}
-.percent {
-  width: 40px;
-  height: 500px;
-  background-color: #d0d0d0;
-  margin: 0 20px;
+.columnFoto {
+  max-width: 490px;
 }
 
 .tools {
@@ -324,6 +330,7 @@ body {
 
 .contacts p {
   text-align: center;
+  margin: 0;
 }
 
 .contacts p a {

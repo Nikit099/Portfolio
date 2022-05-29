@@ -6,7 +6,7 @@ function Progects() {
 
         <div className='projects' id='projects'>
         <h1>PROJECTS</h1>
-            
+            <div className="projContainer">
             <div className='linkProj'>
                 <div className='boxProj1 box' >
                     <img className='proj pr1' src={require('../img/todo.png')} alt="ToDo list" /> 
@@ -94,6 +94,7 @@ function Progects() {
                 
             </div>
             
+        </div>
         </div>
         </div>
     )

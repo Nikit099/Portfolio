@@ -7,6 +7,7 @@ function Contacts() {
     return (
         <div className='contacts' id='contacts' >
             <h1 className='element-animationOpasiti'>CONTACTS</h1>
+            <div className="linksContainer">
             <div className='links element-animationOpasiti'>
            
                 <a target="_blank" href="https://t.me/Nikitalsa" > <img src={telegram} className='logoSvg'  alt="logo" /></a>
@@ -14,6 +15,7 @@ function Contacts() {
                 <a target="_blank" href="https://github.com/Nikit099?tab=overview&from=2022-04-01&to=2022-04-24"> <img src={git} className='logoSvg'   alt="logo" /> </a>
             </div>
             <p> @{new Date().getFullYear()} - <a  target="_blank" href="https://t.me/Nikitalsa">Contact</a> Nikita Nechitailov</p>
+        </div>
         </div>
     )
 }

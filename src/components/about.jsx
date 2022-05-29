@@ -1,5 +1,6 @@
 import React from 'react'
-import Percentages from './percentages'
+import DoughnutChart from './DoughnutChart'
+// import Percentages from './percentages'
 
 function About() {
    
@@ -8,6 +9,9 @@ function About() {
     return (
         <div className='about ' id='about'>
             <h1 className='txtAbout element-animationOpasiti'>ABOUT</h1>
+            <div className="flexContainer">
+
+            
             <div className='gridAbout'>
             <div className='informMe test element-animationLeft'>
                 <div className="meFoto">
@@ -18,13 +22,17 @@ function About() {
                 <p >I am studying in Rostov, I plan to develop seriously in IT, I am looking for a Frontend developer vacancy, <a  target="_blank" href="https://t.me/Nikitalsa">contact me</a>.</p>
             </div>
             <div className="test columnFoto element-animationRight">
-            <img src={require('../img/columns.png')} alt="" />
-
+            {/* <img src={require('../img/columns.png')} alt="" /> */}
+            <DoughnutChart/>
+            </div>
             </div>
             </div>
             <h1 className='txtFunExp element-animationOpasiti'>EXPERIMENTS & OPEN SOURCE</h1>
            
             <h1 className='txtAbout element-animationOpasiti'>Web is fun</h1>
+            <div className="webContainer">
+
+            
             <div className='webFun element-animationOpasiti' >
             <div className="webFun1">
             <div className='fun ' ><a target="_blank" href="https://nikit099.github.io/album/"><img className='webE webElem1' src={require('../img/album.gif')} alt="albumGif" /></a> </div>
@@ -37,6 +45,7 @@ function About() {
             
              </div>
            </div>
+        </div>
         </div>
     )
 }
